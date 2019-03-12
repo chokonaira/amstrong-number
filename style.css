@@ -1,0 +1,88 @@
+html, body {
+  margin: 0;
+}
+body {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+#container {
+  width: 500px;
+  max-width: 90%;
+  color: blue;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.title {
+  font-size: 50px;
+}
+.question {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: justify;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  border: 1px;
+  width: 750px;
+  background-color: lightblue;
+}
+#input {
+  padding: 3px 0px 3px 3px;
+  border: 1px solid #DDDDDD;
+  transition: all 10ms;
+  font-size: 25px;
+  width: 200px;
+  max-width: 100%;
+}
+#input-number:focus, #input-number:hover {
+  outline: none;
+  border: 1px solid black;
+}
+#button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: grey;
+  border: 1px solid blue;
+  color: white;
+  font-weight: 400;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px blue;
+}
+#button:hover, #button:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.is-deactivated {
+  background-color: blue !important;
+}
+
+.message-wrapper {
+  min-height: 100px;
+  width: 100%;
+}
+.message {
+  min-height: 3rem;
+  padding: 10px 20px;
+  display: none;
+  color: green;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.has-error {
+  color: red !important;
+}
